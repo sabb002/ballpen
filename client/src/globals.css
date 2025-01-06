@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h3 {
+        @apply my-2;
+    }
+}
+
+@font-face {
+    font-family: 'Bangla';
+    src: url('./assets/fonts/kalpurush_ANSI.woff2') format('woff2');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Raleway', 'Kalpurush', sans-serif;
+    background-color: #ffffff;
+    color: #222;
+}
+
+#root {
+    position: relative;
+    max-width: 1400px;
+    margin-top: 1rem;
+}
+
+#blog__content h2 {
+    font-size: 1.4em;
+    margin: 2rem 0 1rem;
+    font-weight: 600;
+}
+
+#blog__content h3 {
+    font-size: 1.2em;
+    margin: 3rem 0 1rem;
+    font-weight: 600;
+}
+
+#blog__content h4 {
+    font-size: 1.1em;
+    margin: 3rem 0 1rem;
+    font-weight: 600;
+}
+
+#blog__content a{
+    display: inline-block;
+    line-height: 1rem;
+    border-bottom: 2px solid skyblue;
+}
+
+#blog__content b,
+#blog__content strong{
+    font-weight: 600;
+}
+
+#blog__content ol {
+    display: block;
+    list-style-type: decimal;
+    margin: 0.5rem 0;
+    padding-left: 40px;
+}
+
+#blog__content ul {
+    list-style-type: disc;
+    margin: 0.5rem 0;
+    padding-left: 40px;
+}
+
+#blog__content li {
+    display: list-item;
+}
+
+#blog__content pre,
+#blog__content code {
+    display: block;
+    background-color: #efefef;
+    border: 1px solid #cbcbcb;
+    border-radius: 4px;
+    color: #212529;
+    font-family: 'Consolas', 'Liberation Mono', 'Menlo', monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 1rem 0;
+    padding: 1rem;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+
+
+#blog__content blockquote {
+    font-family: serif;
+    margin: 1rem auto;
+    padding: 1.5rem 2rem;
+    max-width: 100%;
+    position: relative;
+    line-height: 1.6;
+    font-weight: 500;
+    color:#333;
+    border-left: 3px solid lightcoral;
+}
+
+#blog__content img,
+#blog__content picture,
+#blog__content svg,
+#blog__content video,
+#blog__content iframe {
+    display: block;
+    margin: 1rem auto;
+    width: min(100%, 730px);
+    max-height: 500px;
+    object-fit: contain;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 0.5rem;
+}
+
+textarea::-webkit-scrollbar{
+    display: none;
+}
+
+textarea{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+@media screen and (min-width:768px) {
+    #root {
+        margin: 1rem;
+        height: calc(100vh - 2rem);
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #root {
+        margin-inline: auto;
+    }
+}

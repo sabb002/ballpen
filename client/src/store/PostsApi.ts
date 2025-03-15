@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const postsApi = createApi({
     reducerPath: 'postsApi',
     baseQuery: fetchBaseQuery({
-        baseUrl: 'http://localhost:8080/posts'
+        baseUrl: 'https://ballpen.onrender.com/posts'
     }),
     endpoints: (builder) => (
         {
